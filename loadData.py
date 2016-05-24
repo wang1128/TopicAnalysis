@@ -41,7 +41,7 @@ def removeStopWord(seg_list):
     wList = list(setOfword)
     for word in wList:
         count = seg_list.count(word)
-        if count> 2500 or count < 3: #还有另一种方法， 就是就是去除前面第一百个 和 后面的少数的 这个后面要改
+        if count> 2500: #or count < 3: #还有另一种方法， 就是就是去除前面第一百个 和 后面的少数的 这个后面要改
             print word, count
             setOfword.remove(word)
     cleanWordList = list(setOfword)
